@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://est1.be/sitemap.xml
+Sitemap: https://est1.dev/sitemap.xml
