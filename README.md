@@ -20,7 +20,8 @@ Portfolio personnel statique, construit en HTML, CSS et JavaScript sans dépenda
         ├── css/style.css
         ├── js/main.js
         ├── favicon.svg
-        └── og-image.png
+        ├── og-image.png
+        └── projects/             # Logos SVG des projets, indexables par Google Images
 ```
 
 ## Aperçu local
@@ -46,10 +47,10 @@ L'image Nginx sert directement le contenu du dossier `public/`. Aucun processus 
 
 ## Personnalisation
 
-- Le contenu et les métadonnées SEO sont dans `public/index.html`.
+- Le contenu, les métadonnées SEO et les données structurées Person / ProfilePage sont dans `public/index.html`.
 - Les styles, couleurs et points de rupture sont dans `public/assets/css/style.css`.
 - Les interactions (navigation mobile, animations d'apparition, copie d'adresse) sont dans `public/assets/js/main.js`.
-- Les consignes d'exploration sont dans `public/robots.txt` et le sitemap dans `public/sitemap.xml`.
+- Les consignes d'exploration sont dans `public/robots.txt`. Le sitemap `public/sitemap.xml` référence la page d'accueil et ses logos via les extensions Google Images.
 
 Après une modification de contenu importante, mettre à jour le champ `lastmod` du sitemap avec la date réelle de modification.
 
