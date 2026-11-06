@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-labelledby="t d">
+<title id="t">VESC — contrôleurs et mobilité électrique</title><desc id="d">Emblème typographique VESC accompagné d'un circuit électronique stylisé.</desc>
+<defs><linearGradient id="v" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#e7c98d"/><stop offset="1" stop-color="#8fbfb2"/></linearGradient></defs>
+<g transform="translate(68 55)" fill="none" stroke="url(#v)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+<path d="M12 18h54l35 94 35-94h52"/><path d="M190 18v94h65M190 65h48"/>
+<path d="M290 18h65l23 23-23 23h-42l-23 23 23 25h76"/>
+<path d="M401 18h64l25 25v44l-25 25h-64z"/>
+<path d="M498 65h78m-39-39v78" opacity=".55"/>
+</g>
+<text x="645" y="128" fill="#f0e8d7" font-family="Arial,sans-serif" font-size="48" font-weight="700" letter-spacing="2">VESC</text>
+<text x="648" y="174" fill="#9eaa9e" font-family="ui-monospace,monospace" font-size="17" letter-spacing="4">ELECTRIC MOTION</text>
+<path d="M647 204h165" stroke="#8fbfb2" stroke-opacity=".5" stroke-width="2"/>
+<circle cx="823" cy="204" r="5" fill="#8fbfb2"/>
+</svg>
