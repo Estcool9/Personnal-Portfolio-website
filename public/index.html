@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080d17">
   <meta name="color-scheme" content="dark">
-  <title>Esteban Bueno — Systèmes, réseaux & objets connectés</title>
-  <meta name="description" content="Portfolio d'Esteban Bueno, étudiant à l'ESIROI à La Réunion. Projets en administration Linux, Proxmox, Docker, réseaux, domotique, ESP32 et objets connectés.">
+  <title>Esteban Bueno | Étudiant en ingénierie, systèmes & réseaux à La Réunion</title>
+  <meta name="description" content="Portfolio d’Esteban Bueno, étudiant à l’ESIROI à La Réunion : homelab Linux, Proxmox, Docker, réseaux, IoT, projets web et automatisation.">
   <meta name="author" content="Esteban Bueno">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://est1.dev/">
@@ -14,15 +14,16 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Esteban Bueno">
   <meta property="og:locale" content="fr_FR">
-  <meta property="og:title" content="Esteban Bueno — Systèmes, réseaux & objets connectés">
-  <meta property="og:description" content="Je construis, j'administre et j'améliore des systèmes. Découvrez mes projets en informatique, réseaux et électronique.">
+  <meta property="og:title" content="Esteban Bueno | Systèmes, réseaux, homelab & IoT">
+  <meta property="og:description" content="Étudiant à l’ESIROI, je construis des projets concrets en informatique, réseaux, auto-hébergement, électronique et objets connectés.">
   <meta property="og:url" content="https://est1.dev/">
   <meta property="og:image" content="https://est1.dev/assets/og-image.png">
-  <meta property="og:image:alt" content="Portfolio d'Esteban Bueno — systèmes, réseaux et objets connectés">
+  <meta property="og:image:alt" content="Portfolio d’Esteban Bueno — systèmes, réseaux, projets web et objets connectés">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Esteban Bueno — Systèmes, réseaux & objets connectés">
-  <meta name="twitter:description" content="Projets personnels en informatique, systèmes, réseaux, domotique et électronique.">
+  <meta name="twitter:title" content="Esteban Bueno | Systèmes, réseaux, homelab & IoT">
+  <meta name="twitter:description" content="Étudiant à l’ESIROI : projets en Linux, Proxmox, Docker, réseaux, domotique, électronique et développement web.">
   <meta name="twitter:image" content="https://est1.dev/assets/og-image.png">
+  <meta name="twitter:image:alt" content="Portfolio d’Esteban Bueno, étudiant à l’ESIROI à La Réunion">
 
   <link rel="icon" href="/assets/favicon.svg?v=20261106" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,25 +34,81 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Esteban Bueno",
-    "url": "https://est1.dev/",
-    "email": "mailto:esteban@est1.dev",
-    "sameAs": ["https://github.com/Estcool9"],
-    "jobTitle": "Étudiant en Cycle Préparatoire Intégré",
-    "affiliation": {
-      "@type": "CollegeOrUniversity",
-      "name": "ESIROI — École Supérieure d'Ingénieurs Réunion Océan Indien"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressRegion": "La Réunion",
-      "addressCountry": "FR"
-    },
-    "knowsAbout": [
-      "Linux", "Proxmox", "Docker", "Administration réseau",
-      "Sécurité informatique", "Home Assistant", "ESP32",
-      "Python", "JavaScript", "Domotique", "VESC"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://est1.dev/#website",
+        "url": "https://est1.dev/",
+        "name": "Esteban Bueno — Portfolio",
+        "inLanguage": "fr-FR",
+        "publisher": { "@id": "https://est1.dev/#person" }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://est1.dev/#profile",
+        "url": "https://est1.dev/",
+        "name": "Portfolio d’Esteban Bueno",
+        "inLanguage": "fr-FR",
+        "isPartOf": { "@id": "https://est1.dev/#website" },
+        "mainEntity": { "@id": "https://est1.dev/#person" },
+        "primaryImageOfPage": "https://est1.dev/assets/og-image.png"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://est1.dev/#person",
+        "name": "Esteban Bueno",
+        "url": "https://est1.dev/",
+        "email": "mailto:esteban@est1.dev",
+        "image": "https://est1.dev/assets/og-image.png",
+        "sameAs": ["https://github.com/Estcool9"],
+        "jobTitle": "Étudiant en Cycle Préparatoire Intégré",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "ESIROI — École Supérieure d'Ingénieurs Réunion Océan Indien"
+        },
+        "homeLocation": { "@type": "Place", "name": "La Réunion, France" },
+        "knowsAbout": [
+          "Administration Linux", "Debian", "Ubuntu", "Proxmox",
+          "Docker", "Nginx", "DNS", "Réseaux informatiques",
+          "Cybersécurité", "Virtualisation", "Python", "Bash",
+          "JavaScript", "HTML", "CSS", "Home Assistant",
+          "ESP32", "Domotique", "VESC", "Automatisation logicielle"
+        ],
+        "subjectOf": [
+          { "@id": "https://est1.dev/#project-defou" },
+          { "@id": "https://est1.dev/#project-kanaye" },
+          { "@id": "https://est1.dev/#project-coreprotect" }
+        ]
+      },
+      {
+        "@type": "CreativeWork",
+        "@id": "https://est1.dev/#project-defou",
+        "name": "Projet de fou — dossier 2026-PE",
+        "description": "Projet collaboratif étudiant : dossier web interactif de quatre enquêtes pédagogiques sur les perturbateurs endocriniens et les difficultés d’apprentissage, avec indices, suspects, schémas SVG et références à des études scientifiques.",
+        "url": "https://projetdefou.est1.dev/",
+        "image": "https://est1.dev/assets/projects/projet-de-fou-logo.svg",
+        "contributor": { "@id": "https://est1.dev/#person" },
+        "codeRepository": "https://github.com/Estcool9/Projetdefou"
+      },
+      {
+        "@type": "CreativeWork",
+        "@id": "https://est1.dev/#project-kanaye",
+        "name": "Kanaye — confiserie péi",
+        "description": "Projet de classe du Challenge Food Entrepreneur de l’ESIROI : concept de confiserie inspiré de la canne à sucre réunionnaise et création d’un site vitrine statique.",
+        "url": "https://kanaye.est1.dev/",
+        "image": "https://est1.dev/assets/projects/kanaye-logo.svg",
+        "contributor": { "@id": "https://est1.dev/#person" },
+        "codeRepository": "https://github.com/Estcool9/website-kanaye"
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://est1.dev/#project-coreprotect",
+        "name": "CoreProtect AutoBuild",
+        "description": "Automatisation communautaire de compilation des sources publiques de développement de CoreProtect et publication des builds sous forme de releases GitHub.",
+        "codeRepository": "https://github.com/Estcool9/CoreProtect-AutoBuild",
+        "image": "https://est1.dev/assets/projects/coreprotect-autobuild-logo.svg",
+        "programmingLanguage": ["Java", "YAML", "Shell"]
+      }
     ]
   }
   </script>
@@ -318,55 +375,106 @@
 
         <div class="projects-grid">
           <article class="project-card project-featured" data-reveal>
+            <div class="project-art art-investigation">
+              <img class="project-logo" src="/assets/projects/projet-de-fou-logo.svg" alt="Emblème du Projet de fou, dossier interactif de quatre enquêtes pédagogiques" width="900" height="330" loading="lazy" decoding="async">
+              <span class="art-label">COLLABORATION · DOSSIER 2026-PE</span>
+            </div>
+            <div class="project-content">
+              <div class="project-topline"><span class="project-type">01 — PROJET COLLABORATIF</span><span class="project-state"><i></i> HÉBERGÉ & AMÉLIORÉ</span></div>
+              <h3>Projet de fou — quatre enquêtes</h3>
+              <p>Un projet mené avec un camarade de classe, que j’ai hébergé et fait évoluer. Le site prend la forme d’un dossier d’enquête interactif autour des perturbateurs endocriniens et des difficultés d’apprentissage : quatre affaires, des suspects, des indices tirés d’études scientifiques et des schémas SVG réalisés pour le dossier. Les situations étudiées sont fictives ; les sources scientifiques sont réelles.</p>
+              <ul class="project-tags"><li>Collaboration</li><li>HTML / CSS / JavaScript</li><li>SVG</li><li>Hébergement</li><li>Vulgarisation</li></ul>
+              <div class="project-links">
+                <a href="https://projetdefou.est1.dev/" target="_blank" rel="noopener noreferrer">Visiter le projet <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/Estcool9/Projetdefou" target="_blank" rel="noopener noreferrer">Code source <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-art art-kanaye">
+              <img class="project-logo" src="/assets/projects/kanaye-logo.svg" alt="Logo Kanaye, concept de confiserie péi inspiré de la canne à sucre réunionnaise" width="900" height="300" loading="lazy" decoding="async">
+              <span class="art-label">CHALLENGE FOOD ENTREPRENEUR · ESIROI</span>
+            </div>
+            <div class="project-content">
+              <div class="project-topline"><span class="project-type">02 — PROJET DE CLASSE</span><span class="project-state"><i></i> SITE VITRINE</span></div>
+              <h3>Kanaye — confiserie péi</h3>
+              <p>Un projet réalisé dans le cadre du Challenge Food Entrepreneur de l’ESIROI : imaginer une confiserie inspirée du geste de croquer la canne à sucre. Le site vitrine présente le concept, les éditions, les ingrédients, la qualité nutritionnelle et le parcours de fabrication.</p>
+              <ul class="project-tags"><li>Projet entrepreneurial</li><li>Site vitrine</li><li>HTML / CSS / JavaScript</li><li>Responsive</li></ul>
+              <div class="project-links">
+                <a href="https://kanaye.est1.dev/" target="_blank" rel="noopener noreferrer">Visiter Kanaye <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/Estcool9/website-kanaye" target="_blank" rel="noopener noreferrer">Code source <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal data-reveal-delay="80">
             <div class="project-art art-homelab" aria-hidden="true">
               <div class="rack rack-back"></div><div class="rack rack-front"><i></i><i></i><i></i><i></i><i></i></div>
               <div class="art-orbit"></div><span class="art-label">HOME / LAB</span>
             </div>
             <div class="project-content">
-              <div class="project-topline"><span class="project-type">01 — INFRASTRUCTURE</span><span class="project-state"><i></i> PERSONNEL</span></div>
+              <div class="project-topline"><span class="project-type">03 — INFRASTRUCTURE</span><span class="project-state"><i></i> PERSONNEL</span></div>
               <h3>Mon infrastructure personnelle</h3>
-              <p>Un environnement auto-hébergé construit autour de Proxmox. J'y déploie des machines virtuelles et des conteneurs, puis j'organise l'accès aux services avec DNS, reverse proxy, certificats TLS et règles de sécurité.</p>
+              <p>Un environnement auto-hébergé construit autour de Proxmox. J’y déploie des machines virtuelles et des conteneurs, puis j’organise l’accès aux services avec DNS, reverse proxy, certificats TLS et règles de sécurité.</p>
               <ul class="project-tags"><li>Proxmox</li><li>Docker</li><li>Nginx</li><li>DNS</li><li>TLS</li></ul>
             </div>
           </article>
 
-          <article class="project-card" data-reveal data-reveal-delay="80">
-            <div class="project-art art-minecraft" aria-hidden="true">
-              <div class="block-world"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <article class="project-card" data-reveal>
+            <div class="project-art art-minecraft">
+              <img class="project-logo" src="/assets/projects/minecraft-logo.svg" alt="Emblème pixelisé Minecraft pour le serveur communautaire ESIROI hébergé par Esteban" width="920" height="330" loading="lazy" decoding="async">
               <span class="art-label">COMMUNITY SERVER</span>
             </div>
             <div class="project-content">
-              <div class="project-topline"><span class="project-type">02 — COMMUNAUTÉ</span><span class="project-state"><i></i> HÉBERGÉ</span></div>
+              <div class="project-topline"><span class="project-type">04 — HÉBERGEMENT DE JEU</span><span class="project-state"><i></i> COMMUNAUTÉ ESIROI</span></div>
               <h3>Serveur Minecraft — ESIROI</h3>
-              <p>Un serveur hébergé pour les élèves de mon école, avec des plugins et un suivi des mises à jour. Un projet qui mêle administration, maintenance et communauté.</p>
+              <p>Un serveur Minecraft que j’héberge pour les élèves de mon école. Je m’occupe de l’administration, des plugins et du suivi des mises à jour : un terrain concret pour pratiquer les services, la maintenance et la gestion d’une communauté.</p>
               <div class="server-address"><span>esiroi.est1.dev</span><button class="copy-btn" type="button" data-copy="esiroi.est1.dev">Copier</button></div>
-              <ul class="project-tags"><li>Minecraft</li><li>Java</li><li>Plugins</li></ul>
+              <ul class="project-tags"><li>Minecraft</li><li>Java</li><li>Plugins</li><li>Administration</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal data-reveal-delay="80">
+            <div class="project-art art-home">
+              <img class="project-logo" src="/assets/projects/home-assistant-logo.svg" alt="Logo Home Assistant, plateforme domotique utilisée pour la maison connectée" width="900" height="300" loading="lazy" decoding="async">
+              <span class="art-label">CONNECTED HOME</span>
+            </div>
+            <div class="project-content">
+              <div class="project-topline"><span class="project-type">05 — DOMOTIQUE & IOT</span><span class="project-state"><i></i> PERSONNEL</span></div>
+              <h3>Maison connectée</h3>
+              <p>Un environnement domotique organisé autour de Home Assistant, avec des capteurs ESP32 et des automatisations pour centraliser le pilotage des équipements de la maison.</p>
+              <ul class="project-tags"><li>Home Assistant</li><li>ESP32</li><li>Automatisation</li><li>IoT</li></ul>
             </div>
           </article>
 
           <article class="project-card" data-reveal>
-            <div class="project-art art-home" aria-hidden="true">
-              <div class="home-outline"><span class="home-roof"></span><span class="home-body"></span><span class="home-window"></span><span class="home-signal">⌁</span></div>
-              <span class="art-label">CONNECTED HOME</span>
+            <div class="project-art art-vesc">
+              <img class="project-logo" src="/assets/projects/vesc-logo.svg" alt="Emblème VESC pour les travaux de paramétrage et diagnostic de contrôleurs de mobilité électrique" width="900" height="300" loading="lazy" decoding="async">
+              <span class="art-label">ELECTRONICS / MOTION</span>
             </div>
             <div class="project-content">
-              <div class="project-topline"><span class="project-type">03 — DOMOTIQUE</span><span class="project-state"><i></i> PERSONNEL</span></div>
-              <h3>Maison connectée</h3>
-              <p>Un environnement domotique organisé autour de Home Assistant, avec des capteurs ESP32 et des automatisations pour centraliser le pilotage des équipements de la maison.</p>
-              <ul class="project-tags"><li>Home Assistant</li><li>ESP32</li><li>Automatisation</li></ul>
+              <div class="project-topline"><span class="project-type">06 — ÉLECTRONIQUE</span><span class="project-state project-state-progress"><i></i> EN COURS</span></div>
+              <h3>Contrôleurs VESC</h3>
+              <p>Paramétrage et diagnostic de contrôleurs VESC pour la mobilité électrique légère : réglages moteur, lecture de télémétrie et recherche de pannes électriques.</p>
+              <ul class="project-tags"><li>VESC</li><li>Électronique</li><li>Diagnostic</li><li>Mobilité électrique</li></ul>
             </div>
           </article>
 
           <article class="project-card" data-reveal data-reveal-delay="80">
-            <div class="project-art art-vesc" aria-hidden="true">
-              <div class="circuit-board"><span class="circuit-chip">VESC</span><i></i><i></i><i></i><i></i><b></b></div>
-              <span class="art-label">ELECTRONICS / MOTION</span>
+            <div class="project-art art-coreprotect">
+              <img class="project-logo" src="/assets/projects/coreprotect-autobuild-logo.svg" alt="Logo CoreProtect AutoBuild, automatisation de compilation et de publication de builds" width="900" height="300" loading="lazy" decoding="async">
+              <span class="art-label">OPEN SOURCE TOOLING</span>
             </div>
             <div class="project-content">
-              <div class="project-topline"><span class="project-type">04 — ÉLECTRONIQUE</span><span class="project-state project-state-progress"><i></i> EN COURS</span></div>
-              <h3>Contrôleurs VESC</h3>
-              <p>Paramétrage et diagnostic de contrôleurs VESC pour la mobilité électrique légère : réglages moteur, lecture de télémétrie et recherche de pannes électriques.</p>
-              <ul class="project-tags"><li>VESC</li><li>Électronique</li><li>Diagnostic</li></ul>
+              <div class="project-topline"><span class="project-type">07 — AUTOMATISATION & CI</span><span class="project-state"><i></i> OPEN SOURCE</span></div>
+              <h3>CoreProtect AutoBuild</h3>
+              <p>Un projet d’automatisation qui surveille le dépôt public de CoreProtect, détecte les nouveaux commits, compile les sources avec Maven et publie les builds réussis dans les releases GitHub. Le dépôt précise qu’il s’agit d’un build communautaire non officiel.</p>
+              <ul class="project-tags"><li>GitHub Actions</li><li>CI</li><li>Maven</li><li>Java 25</li><li>Releases</li></ul>
+              <div class="project-links">
+                <a href="https://github.com/Estcool9/CoreProtect-AutoBuild" target="_blank" rel="noopener noreferrer">Voir le dépôt <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/Estcool9/CoreProtect-AutoBuild/releases/latest" target="_blank" rel="noopener noreferrer">Dernier build <span aria-hidden="true">↗</span></a>
+              </div>
             </div>
           </article>
         </div>
