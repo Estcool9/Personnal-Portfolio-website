@@ -6,7 +6,7 @@ Portfolio personnel statique, construit en HTML, CSS et JavaScript sans dépenda
 
 ## Structure
 
-\`\`\`
+```
 .
 ├── Dockerfile
 ├── nginx.conf
@@ -21,45 +21,45 @@ Portfolio personnel statique, construit en HTML, CSS et JavaScript sans dépenda
         ├── js/main.js
         ├── favicon.svg
         └── og-image.png
-\`\`\`
+```
 
 ## Aperçu local
 
 Aucun outil de build n'est nécessaire. Depuis la racine du dépôt :
 
-\`\`\`bash
+```bash
 cd public
 python3 -m http.server 8080
-\`\`\`
+```
 
 Ouvrir ensuite http://localhost:8080.
 
 ## Déploiement avec Coolify
 
 1. Créer une ressource **Application** depuis ce dépôt GitHub.
-2. Choisir le build pack **Dockerfile** et la branche \`main\`.
+2. Choisir le build pack **Dockerfile** et la branche `main`.
 3. Vérifier que le Dockerfile à la racine est utilisé.
-4. Associer le domaine \`est1.dev\` à la ressource.
+4. Associer le domaine `est1.dev` à la ressource.
 5. Lancer le déploiement et vérifier que le certificat TLS est actif.
 
-L'image Nginx sert directement le contenu du dossier \`public/\`. Aucun processus npm ou étape de compilation n'est nécessaire.
+L'image Nginx sert directement le contenu du dossier `public/`. Aucun processus npm ou étape de compilation n'est nécessaire.
 
 ## Personnalisation
 
-- Le contenu et les métadonnées SEO sont dans \`public/index.html\`.
-- Les styles, couleurs et points de rupture sont dans \`public/assets/css/style.css\`.
-- Les interactions (navigation mobile, animations d'apparition, copie d'adresse) sont dans \`public/assets/js/main.js\`.
-- Les consignes d'exploration sont dans \`public/robots.txt\` et le sitemap dans \`public/sitemap.xml\`.
+- Le contenu et les métadonnées SEO sont dans `public/index.html`.
+- Les styles, couleurs et points de rupture sont dans `public/assets/css/style.css`.
+- Les interactions (navigation mobile, animations d'apparition, copie d'adresse) sont dans `public/assets/js/main.js`.
+- Les consignes d'exploration sont dans `public/robots.txt` et le sitemap dans `public/sitemap.xml`.
 
-Après une modification de contenu importante, mettre à jour le champ \`lastmod\` du sitemap avec la date réelle de modification.
+Après une modification de contenu importante, mettre à jour le champ `lastmod` du sitemap avec la date réelle de modification.
 
 ## Contact
 
-Le bouton de contact ouvre un email à \`esteban@est1.dev\`. Le site ne collecte pas de données via un formulaire.
+Le bouton de contact ouvre un email à `esteban@est1.dev`. Le site ne collecte pas de données via un formulaire.
 
 ## Image de partage
 
-\`public/assets/og-image.png\` est utilisée pour l'aperçu Open Graph et les partages sur les réseaux. Elle doit rester au format 1200 × 630 px.
+`public/assets/og-image.png` est utilisée pour l'aperçu Open Graph et les partages sur les réseaux. Elle doit rester au format 1200 × 630 px.
 
 ## Licence
 
