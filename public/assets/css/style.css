@@ -271,25 +271,22 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .rack-front i::after { position: absolute; top: 6px; right: 7px; width: 4px; height: 4px; content: ""; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px var(--accent); }
 .art-orbit { position: absolute; width: 260px; height: 100px; border: 1px solid rgba(115,224,206,.32); border-radius: 50%; transform: rotate(-24deg); }
 .art-label { position: absolute; z-index: 2; right: 17px; bottom: 15px; color: rgba(166,206,205,.55); font: .55rem var(--mono); letter-spacing: .13em; }
-.art-minecraft { background: radial-gradient(ellipse at 50% 80%, rgba(94, 128, 77, .28), transparent 65%), #172b2b; }
-.block-world { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(3, 29px); grid-template-rows: repeat(3, 29px); gap: 3px; transform: rotate(-10deg) skewY(8deg); filter: drop-shadow(16px 20px 12px rgba(0,0,0,.3)); }
-.block-world i { border: 1px solid rgba(188,227,174,.18); background: linear-gradient(135deg, #79a66e, #3f7255); }
-.block-world i:nth-child(2), .block-world i:nth-child(4), .block-world i:nth-child(8) { background: linear-gradient(135deg, #a68c5b, #6e624b); }
-.block-world i:nth-child(3), .block-world i:nth-child(6) { background: linear-gradient(135deg, #507a95, #34536c); }
-.art-home { background: radial-gradient(ellipse at 50% 75%, rgba(96, 133, 174, .29), transparent 65%), #142335; }
-.home-outline { position: relative; z-index: 1; width: 112px; height: 82px; margin-top: 25px; }
-.home-roof { position: absolute; top: -22px; left: 10px; width: 91px; height: 65px; border-top: 2px solid #85c4d1; border-left: 2px solid #85c4d1; transform: rotate(45deg) scale(.73); border-radius: 4px; }
-.home-body { position: absolute; inset: 4px 9px 0; border: 1px solid rgba(133,196,209,.75); background: rgba(66,126,151,.14); }
-.home-window { position: absolute; right: 25px; bottom: 0; width: 21px; height: 35px; border: 1px solid #85c4d1; background: rgba(115,224,206,.15); }
-.home-signal { position: absolute; top: -24px; right: -17px; color: var(--accent); font: 2rem var(--mono); }
-.art-vesc { background: radial-gradient(ellipse at 50% 70%, rgba(160, 130, 85, .24), transparent 65%), #28251f; }
-.circuit-board { position: relative; z-index: 1; display: grid; place-items: center; width: 170px; height: 104px; border: 1px solid rgba(209,184,132,.5); border-radius: 7px; background: linear-gradient(140deg, #4e493a, #292f2b 62%, #1b2828); box-shadow: 0 15px 35px rgba(0,0,0,.32); transform: rotate(-8deg); }
-.circuit-board::before, .circuit-board::after { position: absolute; content: ""; border: 1px solid rgba(215,192,138,.23); }
-.circuit-board::before { inset: 8px; }
-.circuit-board::after { top: 50%; left: -25px; width: 220px; border-width: 1px 0 0; }
-.circuit-chip { z-index: 1; display: grid; place-items: center; width: 63px; height: 38px; border: 1px solid #c4ad7d; color: #e1d0a9; background: #242c2a; font: .7rem var(--mono); }
-.circuit-board i { position: absolute; width: 4px; height: 4px; border-radius: 50%; background: #d4ba82; }
-.circuit-board i:nth-of-type(1) { top: 15px; left: 17px; }.circuit-board i:nth-of-type(2) { top: 15px; right: 17px; }.circuit-board i:nth-of-type(3) { bottom: 15px; left: 17px; }.circuit-board i:nth-of-type(4) { bottom: 15px; right: 17px; }
+.art-minecraft {
+  background:
+    radial-gradient(ellipse at 50% 80%, rgba(89, 150, 112, .25), transparent 63%),
+    linear-gradient(135deg, #172b2b, #14222d 75%);
+}
+.art-home {
+  background:
+    radial-gradient(ellipse at 50% 78%, rgba(92, 156, 182, .2), transparent 65%),
+    linear-gradient(135deg, #142b3a, #111e2d 75%);
+}
+.art-home::after { border-color: rgba(115, 196, 208, .22); }
+.art-vesc {
+  background:
+    radial-gradient(ellipse at 50% 78%, rgba(187, 151, 94, .2), transparent 65%),
+    linear-gradient(135deg, #28251f, #1b2024 75%);
+}
 .project-content { padding: 24px 26px 27px; }
 .project-featured .project-content { display: flex; justify-content: center; flex-direction: column; padding: 37px 44px; }
 .project-topline { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 17px; }
