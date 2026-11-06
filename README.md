@@ -1,72 +1,65 @@
 # Portfolio — Esteban Bueno
 
-Site personnel statique (HTML / CSS / JS, sans dépendance de build), pensé pour être
-poussé sur GitHub puis déployé sur ton infrastructure via **Coolify**.
+Portfolio personnel statique, construit en HTML, CSS et JavaScript sans dépendance de build. Le site est servi par Nginx et déployable avec Docker / Coolify.
+
+**Site :** https://est1.dev
 
 ## Structure
 
-```
+\`\`\`
 .
-├── Dockerfile          # image nginx:alpine qui sert le site
-├── nginx.conf          # config nginx (gzip, cache, en-têtes de sécurité)
-├── public/              # tout ce qui est servi au navigateur
-│   ├── index.html
-│   ├── robots.txt
-│   ├── sitemap.xml
-│   └── assets/
-│       ├── css/style.css
-│       ├── js/main.js
-│       ├── favicon.svg
-│       └── og-image.png   # image affichée quand le lien est partagé
-└── README.md
-```
+├── Dockerfile
+├── nginx.conf
+├── README.md
+└── public/
+    ├── index.html
+    ├── 404.html
+    ├── robots.txt
+    ├── sitemap.xml
+    └── assets/
+        ├── css/style.css
+        ├── js/main.js
+        ├── favicon.svg
+        └── og-image.png
+\`\`\`
 
-## Aperçu en local
+## Aperçu local
 
-Aucun outil requis, mais évite d'ouvrir `index.html` en double-clic (certaines
-requêtes de police échouent en `file://`). Un petit serveur suffit :
+Aucun outil de build n'est nécessaire. Depuis la racine du dépôt :
 
-```bash
+\`\`\`bash
 cd public
 python3 -m http.server 8080
-# puis ouvre http://localhost:8080
-```
+\`\`\`
 
-## Déploiement sur Coolify
+Ouvrir ensuite http://localhost:8080.
 
-1. Pousse ce dossier sur un dépôt GitHub (public ou privé).
-2. Dans Coolify : **New Resource → Application → Dockerfile** (ou "Public Repository"
-   si le dépôt est public), et pointe vers ce dépôt.
-3. Coolify détecte le `Dockerfile` à la racine et construit l'image nginx directement
-   — aucune variable d'environnement n'est nécessaire.
-4. Renseigne ton domaine (`est1.be`) dans l'onglet **Domains** de la ressource,
-   Coolify se charge du certificat TLS via Let's Encrypt si tu utilises son proxy Traefik/Caddy.
-5. Déploie. Chaque nouveau `git push` sur la branche suivie peut ensuite redéployer
-   automatiquement si tu actives le webhook Coolify sur le dépôt.
+## Déploiement avec Coolify
 
-## Personnaliser le contenu
+1. Créer une ressource **Application** depuis ce dépôt GitHub.
+2. Choisir le build pack **Dockerfile** et la branche \`main\`.
+3. Vérifier que le Dockerfile à la racine est utilisé.
+4. Associer le domaine \`est1.dev\` à la ressource.
+5. Lancer le déploiement et vérifier que le certificat TLS est actif.
 
-- Tout le texte est dans `public/index.html`, organisé par section
-  (`#profil`, `#parcours`, `#competences`, `#projets`, `#infrastructure`, `#contact`).
-- Les couleurs, polices et espacements sont centralisés dans les variables CSS en haut
-  de `public/assets/css/style.css` (`:root { ... }`).
-- L'animation du terminal dans le hero (`whoami`, `systemctl status homelab`, etc.) se
-  modifie dans le tableau `bootLines` de `public/assets/js/main.js`.
-- Pense à mettre à jour `public/sitemap.xml`, les balises `og:url` / `canonical` dans
-  `index.html`, et `robots.txt` si le domaine final diffère de `est1.be`.
+L'image Nginx sert directement le contenu du dossier \`public/\`. Aucun processus npm ou étape de compilation n'est nécessaire.
 
-## Formulaire de contact
+## Personnalisation
 
-Le bouton "Envoyer un message" ouvre un `mailto:` — ça fonctionne sans backend.
-Si tu veux un vrai formulaire plus tard, le plus simple est un service tiers
-(ex. Formspree, EmailJS) qui ne demande qu'un `<form>` ou un appel `fetch`, sans
-avoir à héberger de backend toi-même.
+- Le contenu et les métadonnées SEO sont dans \`public/index.html\`.
+- Les styles, couleurs et points de rupture sont dans \`public/assets/css/style.css\`.
+- Les interactions (navigation mobile, animations d'apparition, copie d'adresse) sont dans \`public/assets/js/main.js\`.
+- Les consignes d'exploration sont dans \`public/robots.txt\` et le sitemap dans \`public/sitemap.xml\`.
 
-## Image de partage (Open Graph)
+Après une modification de contenu importante, mettre à jour le champ \`lastmod\` du sitemap avec la date réelle de modification.
 
-`public/assets/og-image.png` (1200×630) est ce qui s'affiche quand le lien est
-partagé sur LinkedIn, Discord, etc. Remplace-la si tu préfères une capture d'écran
-réelle du site ou une photo.
+## Contact
+
+Le bouton de contact ouvre un email à \`esteban@est1.dev\`. Le site ne collecte pas de données via un formulaire.
+
+## Image de partage
+
+\`public/assets/og-image.png\` est utilisée pour l'aperçu Open Graph et les partages sur les réseaux. Elle doit rester au format 1200 × 630 px.
 
 ## Licence
 
