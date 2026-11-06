@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-labelledby="t d">
+<title id="t">CoreProtect AutoBuild</title><desc id="d">Emblème d'automatisation logicielle combinant un bouclier, une roue de synchronisation et une console de build.</desc>
+<defs><linearGradient id="cp" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#83dcc5"/><stop offset="1" stop-color="#d2b779"/></linearGradient></defs>
+<g transform="translate(70 28)">
+<path d="M110 10 203 43v72c0 67-43 110-93 132-50-22-93-65-93-132V43Z" fill="#162c36" stroke="url(#cp)" stroke-width="7"/>
+<path d="M53 98h114M53 125h80M53 152h55" stroke="#8dd8c4" stroke-width="8" stroke-linecap="round"/>
+<circle cx="167" cy="170" r="32" fill="#0d1b25" stroke="#d2b779" stroke-width="6"/>
+<path d="M167 147v23l16 9" fill="none" stroke="#d2b779" stroke-width="6" stroke-linecap="round"/>
+</g>
+<text x="330" y="136" fill="#edf5f4" font-family="Arial,sans-serif" font-size="66" font-weight="700" letter-spacing="-2">COREPROTECT</text>
+<text x="334" y="192" fill="#9ddac7" font-family="ui-monospace,monospace" font-size="27" letter-spacing="9">AUTOBUILD</text>
+<path d="M334 223h430" stroke="#83dcc5" stroke-opacity=".38" stroke-width="2"/>
+<text x="334" y="258" fill="#8ba1ad" font-family="ui-monospace,monospace" font-size="15" letter-spacing="3">CI · MAVEN · GITHUB RELEASES</text>
+</svg>
