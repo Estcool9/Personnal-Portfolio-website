@@ -21,7 +21,7 @@ Portfolio personnel statique, construit en HTML, CSS et JavaScript sans dépenda
         ├── js/main.js
         ├── favicon.svg
         ├── og-image.png
-        └── projects/             # Logos SVG des projets, indexables par Google Images
+        └── projects/             # Logos SVG des projets, référencés dans le sitemap d’images
 ```
 
 ## Aperçu local
