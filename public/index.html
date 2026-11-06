@@ -1,297 +1,443 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Esteban — Systèmes, réseaux & objets connectés</title>
-<meta name="description" content="Esteban, étudiant en Cycle Préparatoire Intégré à l'ESIROI (La Réunion). Infrastructure auto-hébergée, réseaux, sécurité, domotique et objets connectés.">
-<meta name="author" content="Esteban">
-  
-<link rel="canonical" href="https://est1.dev/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d17">
+  <meta name="color-scheme" content="dark">
+  <title>Esteban Bueno — Systèmes, réseaux & objets connectés</title>
+  <meta name="description" content="Portfolio d'Esteban Bueno, étudiant à l'ESIROI à La Réunion. Projets en administration Linux, Proxmox, Docker, réseaux, domotique, ESP32 et objets connectés.">
+  <meta name="author" content="Esteban Bueno">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://est1.dev/">
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Esteban — Systèmes, réseaux & objets connectés">
-<meta property="og:description" content="Étudiant en Cycle Préparatoire Intégré à l'ESIROI. Infrastructure auto-hébergée, réseaux, sécurité, domotique et objets connectés.">
-<meta property="og:url" content="https://est1.dev/">
-<meta property="og:image" content="https://est1.dev/assets/og-image.png">
-<meta property="og:locale" content="fr_FR">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Esteban — Systèmes, réseaux & objets connectés">
-<meta name="twitter:description" content="Étudiant en Cycle Préparatoire Intégré à l'ESIROI. Infrastructure auto-hébergée, réseaux, sécurité, domotique et objets connectés.">
-<meta name="twitter:image" content="https://est1.dev/assets/og-image.png">
-<meta name="theme-color" content="#0b1120">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Esteban Bueno">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Esteban Bueno — Systèmes, réseaux & objets connectés">
+  <meta property="og:description" content="Je construis, j'administre et j'améliore des systèmes. Découvrez mes projets en informatique, réseaux et électronique.">
+  <meta property="og:url" content="https://est1.dev/">
+  <meta property="og:image" content="https://est1.dev/assets/og-image.png">
+  <meta property="og:image:alt" content="Portfolio d'Esteban Bueno — systèmes, réseaux et objets connectés">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Esteban Bueno — Systèmes, réseaux & objets connectés">
+  <meta name="twitter:description" content="Projets personnels en informatique, systèmes, réseaux, domotique et électronique.">
+  <meta name="twitter:image" content="https://est1.dev/assets/og-image.png">
 
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Esteban",
-  "url": "https://est1.dev",
-  "email": "mailto:esteban@est1.dev",
-  "sameAs": ["https://github.com/Estcool9"],
-  "jobTitle": "Étudiant en Cycle Préparatoire Intégré",
-  "affiliation": {
-    "@type": "CollegeOrUniversity",
-    "name": "ESIROI — École Supérieure d'Ingénieurs Réunion Océan Indien"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressRegion": "La Réunion",
-    "addressCountry": "FR"
-  },
-  "knowsAbout": ["Linux", "Proxmox", "Docker", "Administration réseau", "Sécurité informatique", "Home Assistant", "ESP32", "Python", "JavaScript", "Domotique", "VESC"]
-}
-</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Esteban Bueno",
+    "url": "https://est1.dev/",
+    "email": "mailto:esteban@est1.dev",
+    "sameAs": ["https://github.com/Estcool9"],
+    "jobTitle": "Étudiant en Cycle Préparatoire Intégré",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "ESIROI — École Supérieure d'Ingénieurs Réunion Océan Indien"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "La Réunion",
+      "addressCountry": "FR"
+    },
+    "knowsAbout": [
+      "Linux", "Proxmox", "Docker", "Administration réseau",
+      "Sécurité informatique", "Home Assistant", "ESP32",
+      "Python", "JavaScript", "Domotique", "VESC"
+    ]
+  }
+  </script>
 </head>
 <body>
-<a class="skip-link" href="#main">Aller au contenu</a>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <a href="#top" class="logo">est1<span class="cursor" aria-hidden="true">_</span></a>
-
-    <nav class="main-nav" id="main-nav">
-      <ul>
-        <li><a href="#profil">Profil</a></li>
-        <li><a href="#parcours">Parcours</a></li>
-        <li><a href="#competences">Compétences</a></li>
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#infrastructure">Infrastructure</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <div class="header-actions">
-      <a class="icon-link" href="https://github.com/Estcool9" target="_blank" rel="noopener" aria-label="Mon profil GitHub">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 1.5c-5.8 0-10.5 4.7-10.5 10.5 0 4.64 3.01 8.58 7.19 9.97.53.1.72-.23.72-.51 0-.25-.01-1.08-.01-1.96-2.93.53-3.69-.71-3.93-1.37-.13-.34-.7-1.37-1.2-1.65-.41-.22-1-.76-.01-.77.93-.01 1.6.86 1.82 1.21 1.06 1.79 2.76 1.28 3.44.98.11-.77.42-1.28.76-1.58-2.34-.27-4.8-1.17-4.8-5.2 0-1.15.41-2.09 1.08-2.82-.11-.27-.47-1.34.1-2.79 0 0 .88-.28 2.89 1.08a9.83 9.83 0 0 1 5.26 0c2.01-1.36 2.89-1.08 2.89-1.08.57 1.45.21 2.52.1 2.79.67.73 1.08 1.66 1.08 2.82 0 4.04-2.47 4.93-4.82 5.19.38.33.71.96.71 1.95 0 1.41-.01 2.54-.01 2.89 0 .28.19.62.73.51 4.17-1.4 7.18-5.33 7.18-9.97C22.5 6.2 17.8 1.5 12 1.5z"/></svg>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#accueil" aria-label="Esteban Bueno — accueil">
+        <span class="brand-mark">e<span>.</span></span>
+        <span class="brand-name">est1<span class="brand-domain">.dev</span></span>
       </a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
-        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-      </button>
-    </div>
-  </div>
-</header>
 
-<main id="main">
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <a href="#profil">À propos</a>
+        <a href="#parcours">Parcours</a>
+        <a href="#competences">Expertises</a>
+        <a href="#projets">Projets</a>
+        <a href="#infrastructure">Lab</a>
+      </nav>
 
-  <section id="top" class="hero">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <p class="hero-kicker">Élève-ingénieur à La Réunion, actuellement en 1<sup>re</sup> année de Cycle Préparatoire Intégré à l'ESIROI.</p>
-        <h1>Esteban</h1>
-        <p class="hero-bio">Avant même d'entrer à l'école, j'ai appris seul à administrer un serveur Linux, à sécuriser un nom de domaine et à automatiser ma maison. Aujourd'hui je continue à construire, casser et réparer mes propres systèmes — c'est ma façon d'apprendre l'ingénierie.</p>
-        <div class="hero-cta">
-          <a href="#projets" class="btn btn-primary">Explorer mes projets</a>
-          <a href="#contact" class="btn btn-outline">Me contacter</a>
-        </div>
-        <ul class="tech-strip" aria-label="Technologies principales">
-          <li>Linux</li><li>Proxmox</li><li>Docker</li><li>Home Assistant</li><li>ESP32</li><li>Nginx</li>
-        </ul>
+      <div class="header-actions">
+        <a class="header-contact" href="#contact">Me contacter <span aria-hidden="true">↗</span></a>
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span>
+        </button>
       </div>
+    </div>
+  </header>
 
-      <div class="hero-terminal">
-        <div class="terminal-window" role="img" aria-label="Terminal affichant les informations : whoami esteban, élève-ingénieur, La Réunion. Statut du serveur personnel : actif.">
-          <div class="terminal-bar">
-            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
-            <p>esteban@est1: ~</p>
+  <main id="contenu">
+    <section class="hero" id="accueil">
+      <div class="hero-grid-lines" aria-hidden="true"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Étudiant à l'ESIROI · La Réunion</p>
+          <h1>Je construis<br>des systèmes<span class="hero-period">.</span><br><span class="hero-outline">Et je cherche à</span><br>les comprendre<span class="hero-period">.</span></h1>
+          <p class="hero-intro">Moi, c'est <strong>Esteban Bueno</strong>. Je m'intéresse à ce qui fait fonctionner le numérique : les systèmes, les réseaux, l'infrastructure et les objets connectés. J'apprends surtout en construisant des projets concrets, de bout en bout.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projets">Voir mes projets <span aria-hidden="true">↘</span></a>
+            <a class="button button-ghost" href="#profil">En savoir plus</a>
           </div>
-          <pre class="terminal-body" id="terminal-body" aria-hidden="true"></pre>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="profil" class="section">
-    <div class="container profil-grid">
-      <div class="profil-text">
-        <h2>Profil</h2>
-        <p>Je m'appelle Esteban. Je suis actuellement en première année de Cycle Préparatoire Intégré (CPI1) à l'ESIROI, sur le campus de Terre-Sainte à Saint-Pierre, où je pose les bases scientifiques qui mènent au cycle ingénieur — avec une nette préférence pour l'informatique et les réseaux.</p>
-        <p>En dehors des cours, l'informatique est une passion que je pratique en autodidacte depuis plusieurs années. J'ai monté et j'administre mon propre serveur sous Proxmox, avec mon nom de domaine et mes propres règles de sécurité. Je programme des microcontrôleurs ESP32, je configure des contrôleurs VESC pour la mobilité électrique légère, et je gère une maison connectée avec Home Assistant. J'anime aussi un serveur Minecraft ouvert aux élèves de mon école.</p>
-      </div>
-      <aside class="info-card" aria-label="Informations clés">
-        <dl>
-          <div><dt>Formation</dt><dd>CPI1 — ESIROI, campus de Terre-Sainte</dd></div>
-          <div><dt>Visée</dt><dd>Cycle ingénieur, spécialité Informatique et Télécommunications</dd></div>
-          <div><dt>Localisation</dt><dd>La Réunion, France</dd></div>
-          <div><dt>Domicile numérique</dt><dd>est1.dev</dd></div>
-          <div><dt>Disponibilité</dt><dd>Échanges, projets et collaborations</dd></div>
-        </dl>
-      </aside>
-    </div>
-  </section>
-
-  <section id="parcours" class="section">
-    <div class="container">
-      <h2>Parcours</h2>
-      <div class="timeline-wrap">
-        <div class="timeline-track" aria-hidden="true"><div class="timeline-fill" id="timeline-fill"></div></div>
-        <ol class="timeline">
-          <li class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <p class="timeline-date">Avant 2026</p>
-              <h3>Lycée général — spécialités Mathématiques et Sciences de l'Ingénieur</h3>
-              <p>Formation scientifique classique, complétée par des projets personnels : modélisation 3D sur SolidWorks, diagnostic et maintenance mécanique et électrique d'engins légers.</p>
-            </div>
-          </li>
-          <li class="timeline-item is-current">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <p class="timeline-date">Depuis septembre 2026</p>
-              <h3>CPI1 — ESIROI, campus de Terre-Sainte</h3>
-              <p>Première année du Cycle Préparatoire Intégré : mathématiques, physique, informatique et sciences de l'ingénieur, en vue d'intégrer le cycle ingénieur à l'issue des deux années de prépa.</p>
-            </div>
-          </li>
-          <li class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <p class="timeline-date">Objectif 2028</p>
-              <h3>Cycle ingénieur — spécialité Informatique et Télécommunications</h3>
-              <p>Rejoindre la spécialité Informatique et Télécommunications de l'ESIROI, ou une école du réseau Geipi Polytech, pour devenir ingénieur systèmes et réseaux.</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </div>
-  </section>
-
-  <section id="competences" class="section">
-    <div class="container">
-      <h2>Compétences</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>Systèmes & réseaux</h3>
-          <ul>
-            <li>Linux (Debian, Ubuntu), usage terminal-first, scripts Bash</li>
-            <li>Virtualisation avec Proxmox (VM, LXC)</li>
-            <li>Conteneurisation avec Docker et Docker Compose</li>
-            <li>Reverse proxy Nginx, zones DNS, certificats TLS</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <h3>Sécurité</h3>
-          <ul>
-            <li>Durcissement de serveurs, accès SSH par clefs</li>
-            <li>Pare-feu et filtrage réseau</li>
-            <li>Tunnels chiffrés et VPN</li>
-            <li>Veille sur les bonnes pratiques de sécurité</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <h3>Programmation</h3>
-          <ul>
-            <li>Python pour l'automatisation et les scripts</li>
-            <li>HTML, CSS, JavaScript — bases du développement web</li>
-            <li>Premiers pas en C/C++ pour microcontrôleurs</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <h3>Hardware & objets connectés</h3>
-          <ul>
-            <li>Microcontrôleurs ESP32 (capteurs, automatisation)</li>
-            <li>Domotique avec Home Assistant</li>
-            <li>Paramétrage et diagnostic de contrôleurs VESC</li>
-            <li>Modélisation 3D avec SolidWorks</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projets" class="section">
-    <div class="container">
-      <h2>Projets</h2>
-      <div class="project-grid">
-
-        <article class="project-card">
-          <p class="project-status"><span class="status-dot"></span>En ligne</p>
-          <h3>Infrastructure personnelle</h3>
-          <p>Mon propre data-center miniature : un serveur Proxmox qui héberge mes machines virtuelles et conteneurs, derrière un nom de domaine et des règles de sécurité que j'ai configurées moi-même — reverse proxy, certificats TLS et pare-feu compris.</p>
-          <ul class="tag-list"><li>Proxmox</li><li>Docker</li><li>Nginx</li><li>DNS</li><li>TLS</li></ul>
-        </article>
-
-        <article class="project-card">
-          <p class="project-status"><span class="status-dot"></span>En ligne</p>
-          <h3>Serveur Minecraft — ESIROI</h3>
-          <p>Un serveur Minecraft que j'héberge pour les élèves de mon école, avec des plugins et un suivi régulier des mises à jour. Toutes les versions du jeu sont supportées : n'hésitez pas à vous connecter.</p>
-          <div class="server-address">
-            <code>esiroi.est1.dev</code>
-            <button type="button" class="copy-btn" data-copy="esiroi.est1.dev">Copier</button>
+          <div class="hero-meta">
+            <span class="meta-line"></span>
+            <span>Curieux par nature, autodidacte par pratique.</span>
           </div>
-          <ul class="tag-list"><li>Minecraft</li><li>Java</li><li>Plugins</li><li>Communauté ESIROI</li></ul>
-        </article>
+        </div>
 
-        <article class="project-card">
-          <p class="project-status"><span class="status-dot"></span>Actif</p>
-          <h3>Maison connectée</h3>
-          <p>Automatisation complète de mon domicile avec Home Assistant : capteurs ESP32, éclairage, énergie et sécurité, pilotés depuis un tableau de bord unique.</p>
-          <ul class="tag-list"><li>Home Assistant</li><li>ESP32</li><li>Domotique</li></ul>
-        </article>
+        <div class="hero-visual" data-reveal data-reveal-delay="120">
+          <div class="visual-orbit orbit-one"></div>
+          <div class="visual-orbit orbit-two"></div>
+          <div class="visual-cross cross-one"></div>
+          <div class="visual-cross cross-two"></div>
+          <div class="visual-label label-top"><span class="mini-led"></span> SYSTEMS / NETWORKS / IoT</div>
 
-        <article class="project-card">
-          <p class="project-status"><span class="status-dot status-dot-progress"></span>En cours</p>
-          <h3>Contrôleurs VESC</h3>
-          <p>Paramétrage et diagnostic de contrôleurs VESC pour la mobilité électrique légère : réglages moteur, télémétrie et résolution de pannes électriques sur trottinettes.</p>
-          <ul class="tag-list"><li>VESC</li><li>Électronique</li><li>Mobilité électrique</li></ul>
-        </article>
+          <div class="visual-core">
+            <div class="core-ring"></div>
+            <div class="core-symbol">&lt;/&gt;</div>
+            <span class="core-caption">BUILD · TEST · LEARN</span>
+          </div>
 
+          <div class="floating-card floating-card-top">
+            <span class="float-icon">01</span>
+            <span><strong>Infrastructure</strong><small>Linux · Proxmox · Docker</small></span>
+          </div>
+          <div class="floating-card floating-card-bottom">
+            <span class="float-icon float-icon-alt">02</span>
+            <span><strong>Objets connectés</strong><small>ESP32 · Home Assistant</small></span>
+          </div>
+          <div class="visual-coordinate">21°08' S&nbsp; 55°32' E</div>
+          <div class="visual-index">FIG. 01 — PERSONAL WORKSPACE</div>
+        </div>
       </div>
-    </div>
-  </section>
 
-  <section id="infrastructure" class="section">
-    <div class="container">
-      <h2>Infrastructure</h2>
-      <p class="section-lead">Les services que j'héberge et que j'administre moi-même, au quotidien.</p>
-      <ul class="status-grid">
-        <li><span class="status-dot"></span><div><p>Cloud personnel</p><span>Fichiers, agenda et contacts</span></div></li>
-        <li><span class="status-dot"></span><div><p>Serveur média</p><span>Bibliothèque personnelle</span></div></li>
-        <li><span class="status-dot"></span><div><p>Messagerie</p><span>Suite mail auto-hébergée</span></div></li>
-        <li><span class="status-dot"></span><div><p>Supervision</p><span>Suivi des performances et alertes</span></div></li>
-        <li><span class="status-dot"></span><div><p>Minecraft — ESIROI</p><span>esiroi.est1.dev</span></div></li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <div class="container contact-grid">
-      <div>
-        <h2>Contact</h2>
-        <p>Une question, une envie de collaborer, ou simplement discuter serveurs et électronique : n'hésitez pas à m'écrire.</p>
-        <ul class="contact-list">
-          <li>
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
-            <a href="mailto:esteban@est1.dev">esteban@est1.dev</a>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 1.5c-5.8 0-10.5 4.7-10.5 10.5 0 4.64 3.01 8.58 7.19 9.97.53.1.72-.23.72-.51 0-.25-.01-1.08-.01-1.96-2.93.53-3.69-.71-3.93-1.37-.13-.34-.7-1.37-1.2-1.65-.41-.22-1-.76-.01-.77.93-.01 1.6.86 1.82 1.21 1.06 1.79 2.76 1.28 3.44.98.11-.77.42-1.28.76-1.58-2.34-.27-4.8-1.17-4.8-5.2 0-1.15.41-2.09 1.08-2.82-.11-.27-.47-1.34.1-2.79 0 0 .88-.28 2.89 1.08a9.83 9.83 0 0 1 5.26 0c2.01-1.36 2.89-1.08 2.89-1.08.57 1.45.21 2.52.1 2.79.67.73 1.08 1.66 1.08 2.82 0 4.04-2.47 4.93-4.82 5.19.38.33.71.96.71 1.95 0 1.41-.01 2.54-.01 2.89 0 .28.19.62.73.51 4.17-1.4 7.18-5.33 7.18-9.97C22.5 6.2 17.8 1.5 12 1.5z"/></svg>
-            <a href="https://github.com/Estcool9" target="_blank" rel="noopener">github.com/Estcool9</a>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 21s-7-5.8-7-11a7 7 0 0 1 14 0c0 5.2-7 11-7 11z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
-            <span>La Réunion, France</span>
-          </li>
-        </ul>
-        <a class="btn btn-primary" href="mailto:esteban@est1.dev?subject=Contact%20depuis%20est1.dev">Envoyer un message</a>
+      <div class="container hero-bottom">
+        <div class="hero-bottom-label">DOMAINES D'INTÉRÊT</div>
+        <div class="hero-tags">
+          <span>Linux & systèmes</span><span>Réseaux</span><span>Automatisation</span><span>Électronique</span><span>Self-hosting</span>
+        </div>
+        <a class="scroll-cue" href="#profil"><span class="scroll-cue-line"></span> Défiler pour explorer</a>
       </div>
+    </section>
+
+    <section class="intro-strip" aria-label="Présentation">
+      <div class="container intro-strip-inner">
+        <p>APPRENDRE EN FAISANT</p>
+        <span class="strip-star" aria-hidden="true">✳</span>
+        <p>COMPRENDRE EN PROFONDEUR</p>
+        <span class="strip-star" aria-hidden="true">✳</span>
+        <p>CONSTRUIRE POUR DE VRAI</p>
+      </div>
+    </section>
+
+    <section class="section section-about" id="profil">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="section-index">01 / À PROPOS</p>
+          <div>
+            <p class="eyebrow">Derrière l'écran</p>
+            <h2>La curiosité comme<br><span class="text-muted">point de départ.</span></h2>
+          </div>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-copy" data-reveal>
+            <p class="about-lead">L'informatique ne se résume pas à utiliser des outils. Ce qui m'intéresse, c'est de comprendre comment ils fonctionnent, comment les relier et comment les rendre fiables.</p>
+            <p>Je suis en première année de Cycle Préparatoire Intégré à l'ESIROI, sur le campus de Terre-Sainte à Saint-Pierre. En parallèle de mes études, je développe mes compétences en autodidacte à travers mon propre environnement technique.</p>
+            <p>J'administre un serveur basé sur Proxmox, je déploie des services avec Docker, je configure des accès réseau et je m'intéresse à la sécurité. Je touche aussi à l'électronique avec les ESP32, à la domotique et aux contrôleurs VESC.</p>
+            <a class="text-link" href="https://github.com/Estcool9" target="_blank" rel="noopener noreferrer">Retrouver mon activité sur GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <aside class="about-card" data-reveal data-reveal-delay="100">
+            <div class="about-card-top"><span>EN QUELQUES MOTS</span><span class="card-spark">✳</span></div>
+            <div class="about-detail">
+              <span class="detail-label">FORMATION</span>
+              <strong>Cycle Préparatoire Intégré</strong>
+              <span>ESIROI · CPI1</span>
+            </div>
+            <div class="about-detail">
+              <span class="detail-label">LOCALISATION</span>
+              <strong>La Réunion</strong>
+              <span>Océan Indien · France</span>
+            </div>
+            <div class="about-detail">
+              <span class="detail-label">CENTRES D'INTÉRÊT</span>
+              <strong>Systèmes & télécommunications</strong>
+              <span>Infrastructure · Réseaux · IoT</span>
+            </div>
+            <div class="about-card-footer"><span class="card-status"></span> Ouvert aux échanges et collaborations</div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-approach" id="approche">
+      <div class="container">
+        <div class="section-heading section-heading-compact" data-reveal>
+          <p class="section-index">02 / MA MÉTHODE</p>
+          <div>
+            <p class="eyebrow">Une approche concrète</p>
+            <h2>Pas seulement apprendre.<br><span class="text-muted">Mettre en pratique.</span></h2>
+          </div>
+        </div>
+        <div class="approach-grid">
+          <article class="approach-card" data-reveal>
+            <span class="approach-number">01</span>
+            <div class="approach-icon icon-build" aria-hidden="true">⌘</div>
+            <h3>Construire</h3>
+            <p>Monter un environnement, assembler les briques et faire fonctionner un service réel, du matériel jusqu'à l'application.</p>
+            <span class="approach-foot">CONCEVOIR & DÉPLOYER</span>
+          </article>
+          <article class="approach-card approach-card-featured" data-reveal data-reveal-delay="80">
+            <span class="approach-number">02</span>
+            <div class="approach-icon icon-understand" aria-hidden="true">⌁</div>
+            <h3>Comprendre</h3>
+            <p>Explorer les mécanismes, lire les journaux, observer le réseau et chercher la cause plutôt que masquer le symptôme.</p>
+            <span class="approach-foot">ANALYSER & DIAGNOSTIQUER</span>
+          </article>
+          <article class="approach-card" data-reveal data-reveal-delay="160">
+            <span class="approach-number">03</span>
+            <div class="approach-icon icon-improve" aria-hidden="true">↗</div>
+            <h3>Améliorer</h3>
+            <p>Automatiser les tâches répétitives, renforcer la configuration et faire évoluer les projets au fil des apprentissages.</p>
+            <span class="approach-foot">FIABILISER & FAIRE ÉVOLUER</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-journey" id="parcours">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="section-index">03 / PARCOURS</p>
+          <div>
+            <p class="eyebrow">Études & progression</p>
+            <h2>Un parcours en<br><span class="text-muted">construction.</span></h2>
+          </div>
+        </div>
+        <div class="journey-layout">
+          <div class="journey-aside" data-reveal>
+            <p>Une formation scientifique, beaucoup de pratique personnelle et un cap : approfondir les systèmes informatiques et les télécommunications.</p>
+            <div class="journey-note"><span class="note-mark">↳</span><span>La théorie donne les bases.<br>Les projets donnent le terrain.</span></div>
+          </div>
+          <ol class="timeline">
+            <li class="timeline-item">
+              <span class="timeline-marker"></span>
+              <div class="timeline-date">AVANT 2026</div>
+              <div class="timeline-content">
+                <div class="timeline-title-row"><h3>Lycée général</h3><span class="timeline-chip">FORMATION SCIENTIFIQUE</span></div>
+                <p>Spécialités Mathématiques et Sciences de l'Ingénieur. En parallèle, premiers projets personnels autour de la modélisation 3D, du diagnostic et de la maintenance mécanique et électrique.</p>
+              </div>
+            </li>
+            <li class="timeline-item timeline-current">
+              <span class="timeline-marker"></span>
+              <div class="timeline-date">DEPUIS SEPTEMBRE 2026</div>
+              <div class="timeline-content">
+                <div class="timeline-title-row"><h3>ESIROI — Cycle Préparatoire Intégré</h3><span class="timeline-chip timeline-chip-current">EN COURS</span></div>
+                <p>Première année du CPI à Saint-Pierre : mathématiques, physique, informatique et sciences de l'ingénieur, avec une pratique personnelle tournée vers les systèmes et les réseaux.</p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <span class="timeline-marker"></span>
+              <div class="timeline-date">OBJECTIF À VENIR</div>
+              <div class="timeline-content">
+                <div class="timeline-title-row"><h3>Cycle ingénieur</h3><span class="timeline-chip">OBJECTIF</span></div>
+                <p>Approfondir l'informatique et les télécommunications, avec l'ambition de travailler sur les infrastructures, les systèmes et les réseaux.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-skills" id="competences">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="section-index">04 / EXPERTISES</p>
+          <div>
+            <p class="eyebrow">Boîte à outils</p>
+            <h2>Des briques pour<br><span class="text-muted">des projets concrets.</span></h2>
+          </div>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card" data-reveal>
+            <div class="skill-card-head"><span class="skill-icon">01</span><span class="skill-category">INFRASTRUCTURE</span></div>
+            <h3>Systèmes & réseaux</h3>
+            <p>Installer, administrer et relier les services qui composent un environnement informatique.</p>
+            <ul class="skill-tags"><li>Linux</li><li>Debian</li><li>Ubuntu</li><li>Proxmox</li><li>Docker</li><li>Nginx</li><li>DNS</li><li>TLS</li></ul>
+          </article>
+          <article class="skill-card" data-reveal data-reveal-delay="70">
+            <div class="skill-card-head"><span class="skill-icon">02</span><span class="skill-category">PROTECTION</span></div>
+            <h3>Sécurité & réseau</h3>
+            <p>Appliquer les fondamentaux de sécurité et comprendre les chemins d'accès aux services.</p>
+            <ul class="skill-tags"><li>SSH</li><li>Pare-feu</li><li>VPN</li><li>Tunnels chiffrés</li><li>Durcissement</li></ul>
+          </article>
+          <article class="skill-card" data-reveal data-reveal-delay="140">
+            <div class="skill-card-head"><span class="skill-icon">03</span><span class="skill-category">DÉVELOPPEMENT</span></div>
+            <h3>Programmation</h3>
+            <p>Écrire des scripts, automatiser des tâches et développer des interfaces web simples.</p>
+            <ul class="skill-tags"><li>Python</li><li>Bash</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>C / C++</li></ul>
+          </article>
+          <article class="skill-card" data-reveal data-reveal-delay="210">
+            <div class="skill-card-head"><span class="skill-icon">04</span><span class="skill-category">MATÉRIEL & IOT</span></div>
+            <h3>Électronique & IoT</h3>
+            <p>Faire dialoguer le matériel, les capteurs et les services connectés.</p>
+            <ul class="skill-tags"><li>ESP32</li><li>Home Assistant</li><li>VESC</li><li>Domotique</li><li>SolidWorks</li></ul>
+          </article>
+        </div>
+        <p class="skills-note"><span class="note-mark">✳</span> Cette liste reflète mes pratiques et mes apprentissages actuels — elle évolue avec les projets.</p>
+      </div>
+    </section>
+
+    <section class="section section-projects" id="projets">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="section-index">05 / PROJETS</p>
+          <div>
+            <p class="eyebrow">Du concret, du fait maison</p>
+            <h2>Ce que je construis<br><span class="text-muted">et fais évoluer.</span></h2>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card project-featured" data-reveal>
+            <div class="project-art art-homelab" aria-hidden="true">
+              <div class="rack rack-back"></div><div class="rack rack-front"><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="art-orbit"></div><span class="art-label">HOME / LAB</span>
+            </div>
+            <div class="project-content">
+              <div class="project-topline"><span class="project-type">01 — INFRASTRUCTURE</span><span class="project-state"><i></i> PERSONNEL</span></div>
+              <h3>Mon infrastructure personnelle</h3>
+              <p>Un environnement auto-hébergé construit autour de Proxmox. J'y déploie des machines virtuelles et des conteneurs, puis j'organise l'accès aux services avec DNS, reverse proxy, certificats TLS et règles de sécurité.</p>
+              <ul class="project-tags"><li>Proxmox</li><li>Docker</li><li>Nginx</li><li>DNS</li><li>TLS</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal data-reveal-delay="80">
+            <div class="project-art art-minecraft" aria-hidden="true">
+              <div class="block-world"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <span class="art-label">COMMUNITY SERVER</span>
+            </div>
+            <div class="project-content">
+              <div class="project-topline"><span class="project-type">02 — COMMUNAUTÉ</span><span class="project-state"><i></i> HÉBERGÉ</span></div>
+              <h3>Serveur Minecraft — ESIROI</h3>
+              <p>Un serveur hébergé pour les élèves de mon école, avec des plugins et un suivi des mises à jour. Un projet qui mêle administration, maintenance et communauté.</p>
+              <div class="server-address"><span>esiroi.est1.dev</span><button class="copy-btn" type="button" data-copy="esiroi.est1.dev">Copier</button></div>
+              <ul class="project-tags"><li>Minecraft</li><li>Java</li><li>Plugins</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-art art-home" aria-hidden="true">
+              <div class="home-outline"><span class="home-roof"></span><span class="home-body"></span><span class="home-window"></span><span class="home-signal">⌁</span></div>
+              <span class="art-label">CONNECTED HOME</span>
+            </div>
+            <div class="project-content">
+              <div class="project-topline"><span class="project-type">03 — DOMOTIQUE</span><span class="project-state"><i></i> PERSONNEL</span></div>
+              <h3>Maison connectée</h3>
+              <p>Un environnement domotique organisé autour de Home Assistant, avec des capteurs ESP32 et des automatisations pour centraliser le pilotage des équipements de la maison.</p>
+              <ul class="project-tags"><li>Home Assistant</li><li>ESP32</li><li>Automatisation</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal data-reveal-delay="80">
+            <div class="project-art art-vesc" aria-hidden="true">
+              <div class="circuit-board"><span class="circuit-chip">VESC</span><i></i><i></i><i></i><i></i><b></b></div>
+              <span class="art-label">ELECTRONICS / MOTION</span>
+            </div>
+            <div class="project-content">
+              <div class="project-topline"><span class="project-type">04 — ÉLECTRONIQUE</span><span class="project-state project-state-progress"><i></i> EN COURS</span></div>
+              <h3>Contrôleurs VESC</h3>
+              <p>Paramétrage et diagnostic de contrôleurs VESC pour la mobilité électrique légère : réglages moteur, lecture de télémétrie et recherche de pannes électriques.</p>
+              <ul class="project-tags"><li>VESC</li><li>Électronique</li><li>Diagnostic</li></ul>
+            </div>
+          </article>
+        </div>
+        <div class="projects-footer" data-reveal><span>Chaque projet est un terrain d'expérimentation.</span><a class="text-link" href="https://github.com/Estcool9" target="_blank" rel="noopener noreferrer">Explorer mes dépôts GitHub <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="section section-lab" id="infrastructure">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="section-index">06 / HOMELAB</p>
+          <div>
+            <p class="eyebrow">Mon terrain de jeu</p>
+            <h2>Une infrastructure<br><span class="text-muted">à comprendre de l'intérieur.</span></h2>
+          </div>
+        </div>
+        <div class="lab-layout">
+          <div class="lab-diagram" data-reveal>
+            <div class="diagram-top"><span>VUE SIMPLIFIÉE</span><span class="diagram-live"><i></i> ARCHITECTURE PERSONNELLE</span></div>
+            <div class="diagram-layer layer-hardware"><span class="layer-number">01</span><div><strong>Hôte & virtualisation</strong><small>Proxmox · Machines virtuelles · LXC</small></div><span class="layer-icon">▤</span></div>
+            <div class="diagram-connector"><i></i><i></i><i></i></div>
+            <div class="diagram-layer layer-services"><span class="layer-number">02</span><div><strong>Services & conteneurs</strong><small>Docker · Applications auto-hébergées</small></div><span class="layer-icon">▦</span></div>
+            <div class="diagram-connector"><i></i><i></i><i></i></div>
+            <div class="diagram-layer layer-access"><span class="layer-number">03</span><div><strong>Accès & réseau</strong><small>DNS · Nginx · TLS · Filtrage</small></div><span class="layer-icon">⌘</span></div>
+            <div class="diagram-connector"><i></i><i></i><i></i></div>
+            <div class="diagram-layer layer-usage"><span class="layer-number">04</span><div><strong>Usages</strong><small>Cloud · Messagerie · Média · Minecraft</small></div><span class="layer-icon">◎</span></div>
+            <p class="diagram-caption">Schéma conceptuel des briques que j'utilise et administre.</p>
+          </div>
+          <div class="lab-copy" data-reveal data-reveal-delay="100">
+            <p class="lab-lead">Le homelab est mon atelier : un espace pour tester, apprendre et mieux comprendre l'administration d'une infrastructure.</p>
+            <p>Je travaille sur la virtualisation, le déploiement de services, leur exposition sur Internet et les mécanismes qui permettent de les maintenir accessibles et sécurisés.</p>
+            <div class="lab-services">
+              <div><span class="service-bullet"></span><span><strong>Cloud personnel</strong><small>Fichiers, agenda et contacts</small></span></div>
+              <div><span class="service-bullet"></span><span><strong>Services multimédias</strong><small>Bibliothèque personnelle</small></span></div>
+              <div><span class="service-bullet"></span><span><strong>Messagerie & supervision</strong><small>Services et suivi de l'infrastructure</small></span></div>
+              <div><span class="service-bullet"></span><span><strong>Serveur Minecraft</strong><small>Communauté ESIROI · esiroi.est1.dev</small></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <div class="contact-panel" data-reveal>
+          <div class="contact-orb contact-orb-one"></div><div class="contact-orb contact-orb-two"></div>
+          <div class="contact-content">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> ET MAINTENANT ?</p>
+            <h2>Une idée, un projet<br>ou une question<span class="hero-period"> ?</span></h2>
+            <p>Je suis toujours partant pour échanger autour des systèmes, des réseaux, de l'électronique ou d'un projet technique. Écrivez-moi.</p>
+            <a class="button button-primary button-contact" href="mailto:esteban@est1.dev?subject=Contact%20depuis%20est1.dev">esteban@est1.dev <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="contact-aside">
+            <span class="contact-aside-label">RETROUVEZ-MOI AUSSI SUR</span>
+            <a href="https://github.com/Estcool9" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <span class="contact-location">La Réunion, France<br>Océan Indien</span>
+            <span class="contact-signature">ESTEBAN BUENO © <span id="year"></span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="footer-brand" href="#accueil">est1<span>.</span>dev</a>
+      <p>Conçu, développé et hébergé avec curiosité à La Réunion.</p>
+      <a class="footer-top" href="#accueil">Retour en haut ↑</a>
     </div>
-  </section>
+  </footer>
 
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p>© <span id="year"></span> Esteban Bueno — site conçu, développé et hébergé par mes soins.</p>
-    <a href="https://github.com/Estcool9" target="_blank" rel="noopener">Code source</a>
-  </div>
-</footer>
-
-<script src="assets/js/main.js"></script>
+  <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
