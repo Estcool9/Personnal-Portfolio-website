@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-labelledby="t d">
+<title id="t">Kanaye — confiserie péi</title><desc id="d">Emblème botanique et mot-symbole Kanaye, projet de confiserie inspiré de la canne à sucre réunionnaise.</desc>
+<defs><linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b9ca83"/><stop offset="1" stop-color="#65875b"/></linearGradient></defs>
+<g transform="translate(72 34)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M125 230V30M125 92C63 88 36 53 39 25c52 1 88 22 86 67Zm0 47c59-6 92-40 92-74-54 5-90 28-92 74Zm0 47c-47 1-77-23-85-54 46-4 78 13 85 54Z" stroke="url(#leaf)" stroke-width="10"/>
+<path d="M125 30v200" stroke="#d1b876" stroke-width="5"/>
+<path d="M95 68 125 92m0 47 42-37m-42 84-38-24" stroke="#d1b876" stroke-width="3" opacity=".8"/>
+</g>
+<text x="350" y="145" fill="#edf0dc" font-family="Georgia,serif" font-size="112" letter-spacing="-5">Kanaye</text>
+<text x="363" y="198" fill="#b7c69c" font-family="ui-monospace,monospace" font-size="19" letter-spacing="6">CONFISERIE PÉI · LA RÉUNION</text>
+</svg>
