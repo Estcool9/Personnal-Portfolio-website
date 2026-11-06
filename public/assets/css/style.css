@@ -510,3 +510,77 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
   .js [data-reveal] { opacity: 1; transform: none; }
 }
+
+
+/* Project identity marks — local, semantic SVG images */
+.project-logo {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: min(76%, 390px);
+  max-height: 145px;
+  object-fit: contain;
+  filter: drop-shadow(0 16px 27px rgba(0, 0, 0, .22));
+}
+.project-featured .project-logo { width: min(82%, 480px); max-height: 190px; }
+.project-art.art-investigation {
+  background:
+    radial-gradient(ellipse at 48% 78%, rgba(185, 131, 88, .18), transparent 68%),
+    linear-gradient(135deg, #192b38, #111d2b 70%);
+}
+.project-art.art-investigation::after {
+  border-color: rgba(210, 183, 137, .22);
+  box-shadow: 0 0 0 23px rgba(210,183,137,.025), 0 0 0 47px rgba(210,183,137,.018);
+}
+.project-art.art-kanaye {
+  background:
+    radial-gradient(ellipse at 50% 85%, rgba(119, 151, 86, .25), transparent 64%),
+    linear-gradient(135deg, #1d302b, #172721 70%);
+}
+.project-art.art-kanaye::after { border-color: rgba(190, 199, 139, .2); }
+.project-art.art-minecraft {
+  background:
+    radial-gradient(ellipse at 50% 80%, rgba(89, 150, 112, .25), transparent 63%),
+    linear-gradient(135deg, #172b2b, #14222d 75%);
+}
+.project-art.art-home {
+  background:
+    radial-gradient(ellipse at 50% 78%, rgba(92, 156, 182, .2), transparent 65%),
+    linear-gradient(135deg, #142b3a, #111e2d 75%);
+}
+.project-art.art-home::after { border-color: rgba(115, 196, 208, .22); }
+.project-art.art-vesc {
+  background:
+    radial-gradient(ellipse at 50% 78%, rgba(187, 151, 94, .18), transparent 65%),
+    linear-gradient(135deg, #2b2b28, #171f25 75%);
+}
+.project-art.art-vesc::after { border-color: rgba(213, 190, 137, .22); }
+.project-art.art-coreprotect {
+  background:
+    radial-gradient(ellipse at 50% 78%, rgba(84, 160, 142, .2), transparent 65%),
+    linear-gradient(135deg, #182c35, #111e2b 75%);
+}
+.project-art.art-coreprotect::after { border-color: rgba(131, 220, 197, .22); }
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 19px;
+  margin-top: 17px;
+}
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent);
+  font-size: .72rem;
+  font-weight: 700;
+  transition: color .2s ease, gap .2s var(--ease);
+}
+.project-links a span { color: #9bb8b7; }
+.project-links a:hover { gap: 12px; color: var(--accent-strong); }
+.project-featured .project-links { margin-top: 20px; }
+@media (max-width: 620px) {
+  .project-logo { width: min(82%, 330px); max-height: 125px; }
+  .project-featured .project-logo { width: min(84%, 350px); max-height: 145px; }
+  .project-links { gap: 9px 16px; }
+}
