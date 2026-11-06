@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-labelledby="t d">
+<title id="t">Home Assistant</title><desc id="d">Emblème graphique d'une maison connectée et de ses appareils pilotés par Home Assistant.</desc>
+<defs><linearGradient id="ha" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#70d7d0"/><stop offset="1" stop-color="#4b91d4"/></linearGradient></defs>
+<g transform="translate(75 30)">
+<path d="M34 132 145 34l111 98v94a12 12 0 0 1-12 12H46a12 12 0 0 1-12-12Z" fill="none" stroke="url(#ha)" stroke-width="15" stroke-linejoin="round"/>
+<path d="m18 132 127-112 127 112" fill="none" stroke="url(#ha)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M112 238v-73a33 33 0 0 1 66 0v73" fill="none" stroke="#8bded2" stroke-width="12" stroke-linecap="round"/>
+<path d="M145 76v38m-32-19h64" stroke="#d8faf4" stroke-width="8" stroke-linecap="round"/>
+<circle cx="145" cy="114" r="13" fill="#e8fff8"/>
+<circle cx="69" cy="162" r="8" fill="#77c7dc"/><circle cx="222" cy="162" r="8" fill="#77c7dc"/>
+<path d="M69 162h31m91 0h31" stroke="#77c7dc" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+</g>
+<text x="390" y="145" fill="#eaf5f6" font-family="Arial,sans-serif" font-size="80" font-weight="600" letter-spacing="-3">Home Assistant</text>
+<text x="397" y="195" fill="#8ca9b6" font-family="ui-monospace,monospace" font-size="19" letter-spacing="7">OPEN HOME AUTOMATION</text>
+</svg>
