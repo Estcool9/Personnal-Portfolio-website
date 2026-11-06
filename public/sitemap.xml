@@ -21,7 +21,7 @@
       <image:caption>Serveur Minecraft hébergé et administré par Esteban Bueno pour les élèves de son école.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://est1.dev/assets/projects/home-assistant-logo.svg</image:loc>
+      <image:loc>https://est1.dev/assets/projects/home-assistant-logo.svg?v=20261106-2</image:loc>
       <image:title>Home Assistant — maison connectée</image:title>
       <image:caption>Projet personnel de domotique utilisant Home Assistant, ESP32 et des automatisations.</image:caption>
     </image:image>
@@ -34,6 +34,11 @@
       <image:loc>https://est1.dev/assets/projects/coreprotect-autobuild-logo.svg</image:loc>
       <image:title>CoreProtect AutoBuild — automatisation CI</image:title>
       <image:caption>Projet d’automatisation des builds et publications GitHub pour CoreProtect.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://est1.dev/assets/og-image.png</image:loc>
+      <image:title>Portfolio d’Esteban Bueno — systèmes, réseaux, homelab et objets connectés</image:title>
+      <image:caption>Présentation d’Esteban Bueno, étudiant à l’ESIROI à La Réunion, et de ses projets en informatique et électronique.</image:caption>
     </image:image>
   </url>
 </urlset>
