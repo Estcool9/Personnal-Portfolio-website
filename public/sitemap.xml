@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://est1.dev/</loc>
     <lastmod>2026-11-06</lastmod>
+    <image:image>
+      <image:loc>https://est1.dev/assets/projects/projet-de-fou-logo.svg</image:loc>
+      <image:title>Projet de fou — dossier interactif de quatre enquêtes</image:title>
+      <image:caption>Projet collaboratif hébergé et amélioré par Esteban Bueno, autour des perturbateurs endocriniens et des difficultés d’apprentissage.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://est1.dev/assets/projects/kanaye-logo.svg</image:loc>
+      <image:title>Kanaye — concept de confiserie péi</image:title>
+      <image:caption>Projet du Challenge Food Entrepreneur de l’ESIROI, inspiré de la canne à sucre réunionnaise.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://est1.dev/assets/projects/minecraft-logo.svg</image:loc>
+      <image:title>Minecraft — serveur communautaire ESIROI</image:title>
+      <image:caption>Serveur Minecraft hébergé et administré par Esteban Bueno pour les élèves de son école.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://est1.dev/assets/projects/home-assistant-logo.svg</image:loc>
+      <image:title>Home Assistant — maison connectée</image:title>
+      <image:caption>Projet personnel de domotique utilisant Home Assistant, ESP32 et des automatisations.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://est1.dev/assets/projects/vesc-logo.svg</image:loc>
+      <image:title>VESC — contrôleurs de mobilité électrique</image:title>
+      <image:caption>Paramétrage et diagnostic de contrôleurs VESC pour la mobilité électrique légère.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://est1.dev/assets/projects/coreprotect-autobuild-logo.svg</image:loc>
+      <image:title>CoreProtect AutoBuild — automatisation CI</image:title>
+      <image:caption>Projet d’automatisation des builds et publications GitHub pour CoreProtect.</image:caption>
+    </image:image>
   </url>
 </urlset>
