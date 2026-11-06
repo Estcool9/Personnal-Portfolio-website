@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="330" viewBox="0 0 920 330" role="img" aria-labelledby="t d">
+<title id="t">Minecraft — serveur communautaire</title><desc id="d">Emblème graphique pixelisé pour le serveur Minecraft hébergé pour les élèves de l'ESIROI.</desc>
+<defs><linearGradient id="stone" x2="0" y2="1"><stop stop-color="#c7d8c9"/><stop offset="1" stop-color="#759a86"/></linearGradient><linearGradient id="green" x2="1" y2="1"><stop stop-color="#a5d58e"/><stop offset="1" stop-color="#3f8060"/></linearGradient><filter id="shadow"><feGaussianBlur stdDeviation="12"/></filter></defs>
+<ellipse cx="460" cy="270" rx="210" ry="16" fill="#4ad3a4" opacity=".18" filter="url(#shadow)"/>
+<g transform="translate(395 25)">
+<path d="M0 42 58 8l61 34-60 35Z" fill="url(#stone)" stroke="#d5e6d7" stroke-width="2"/>
+<path d="M0 42v65l59 36V77Z" fill="#527b6b" stroke="#9ec7a6" stroke-width="2"/>
+<path d="M59 77v66l60-35V42Z" fill="url(#green)" stroke="#a7d6a6" stroke-width="2"/>
+<path d="M20 54 42 67v16L20 70Z" fill="#1b3b34"/><path d="M75 88 98 75v18L75 106Z" fill="#22463a"/>
+<path d="M-26 17h22v22h-22zM124 0h22v22h-22zM130 111h18v18h-18z" fill="#9fe5bd" opacity=".8"/>
+</g>
+<text x="460" y="230" text-anchor="middle" fill="#eaf5e8" font-family="Arial Black,Impact,sans-serif" font-size="76" font-weight="900" letter-spacing="2" stroke="#233b34" stroke-width="7" paint-order="stroke">MINECRAFT</text>
+<text x="460" y="278" text-anchor="middle" fill="#9bb9aa" font-family="ui-monospace,monospace" font-size="22" letter-spacing="8">COMMUNITY SERVER</text>
+</svg>
