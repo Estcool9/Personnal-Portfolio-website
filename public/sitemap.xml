@@ -4,7 +4,7 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://est1.dev/</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <image:image>
       <image:loc>https://est1.dev/assets/projects/projet-de-fou-logo.svg</image:loc>
       <image:title>Projet de fou — dossier interactif de quatre enquêtes</image:title>
@@ -40,5 +40,13 @@
       <image:title>Portfolio d’Esteban Bueno — systèmes, réseaux, homelab et objets connectés</image:title>
       <image:caption>Présentation d’Esteban Bueno, étudiant à l’ESIROI à La Réunion, et de ses projets en informatique et électronique.</image:caption>
     </image:image>
+  </url>
+  <url>
+    <loc>https://est1.dev/politique-de-confidentialite.html</loc>
+    <lastmod>2026-11-08</lastmod>
+  </url>
+  <url>
+    <loc>https://est1.dev/conditions-utilisation.html</loc>
+    <lastmod>2026-11-08</lastmod>
   </url>
 </urlset>
