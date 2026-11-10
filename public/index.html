@@ -32,7 +32,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css?v=20261110-cv2">
+  <link rel="stylesheet" href="/assets/css/style.css?v=20261110-revolt1">
 
   <script type="application/ld+json">
   {
@@ -82,10 +82,27 @@
           { "@id": "https://est1.dev/#project-coreprotect" },
           { "@id": "https://est1.dev/#project-minecraft" },
           { "@id": "https://est1.dev/#project-homeassistant" },
-          { "@id": "https://est1.dev/#project-vesc" }
+          { "@id": "https://est1.dev/#project-vesc" },
+          { "@id": "https://est1.dev/#project-revolt-engine" }
         ]
       },
 
+      {
+        "@type": "Organization",
+        "@id": "https://revolt-engine.com/#organization",
+        "name": "REVOLT ENGINE",
+        "url": "https://revolt-engine.com/",
+        "description": "Projet indépendant de préparation, diagnostic, électronique et conception de pièces sur mesure pour trottinettes électriques haute performance à La Réunion."
+      },
+      {
+        "@type": "CreativeWork",
+        "@id": "https://est1.dev/#project-revolt-engine",
+        "name": "REVOLT ENGINE — projet entrepreneurial et ingénierie numérique",
+        "description": "Co-fondation d'un projet indépendant dédié à la préparation et au diagnostic de trottinettes électriques haute performance, avec contribution au développement du site web, à la structuration des contenus et à l'infrastructure numérique.",
+        "url": "https://revolt-engine.com/",
+        "image": "https://revolt-engine.com/brand/logo-revolt-engine.svg",
+        "contributor": { "@id": "https://est1.dev/#person" }
+      },
       {
         "@type": "CreativeWork",
         "@id": "https://est1.dev/#project-kanaye",
@@ -167,16 +184,18 @@
       <div class="hero-grid-lines" aria-hidden="true"></div>
       <div class="container hero-layout">
         <div class="hero-copy" data-reveal>
-          <p class="eyebrow"><span class="eyebrow-dot"></span> Étudiant à l'ESIROI · La Réunion</p>
-          <h1>Étudiant à l’ESIROI<br><span class="hero-outline">Informatique & systèmes</span></h1>
-          <p class="hero-intro">Je m'appelle <strong>Esteban Bueno</strong>, étudiant en Cycle Préparatoire Intégré à l'ESIROI, à La Réunion. Je travaille sur des projets en administration système, réseaux, développement web et objets connectés.</p>
+          <p class="eyebrow"><span class="eyebrow-dot"></span> PORTFOLIO PERSONNEL · LA RÉUNION</p>
+          <h1 class="hero-name">Esteban<br><span class="hero-outline">Bueno.</span></h1>
+          <p class="hero-role">Étudiant à l’ESIROI <span>·</span> Informatique, systèmes & ingénierie</p>
+          <p class="hero-intro">Je conçois, j’expérimente et je déploie des projets qui relient développement logiciel, infrastructures et systèmes techniques. En parallèle de ma formation, je co-développe <strong>REVOLT ENGINE</strong>, un projet entrepreneurial autour de la mobilité électrique.</p>
+          <a class="hero-email" href="mailto:esteban@est1.dev?subject=Contact%20depuis%20est1.dev"><span class="hero-email-label">CONTACT DIRECT</span><strong>esteban@est1.dev</strong><span aria-hidden="true">↗</span></a>
           <div class="hero-actions">
-            <a class="button button-primary" href="#projets">Voir mes projets <span aria-hidden="true">↘</span></a>
+            <a class="button button-primary" href="#projets">Découvrir mes projets <span aria-hidden="true">↘</span></a>
             <a class="button button-ghost" href="https://github.com/Estcool9" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
           </div>
           <div class="hero-meta">
             <span class="meta-line"></span>
-            <span>Étudiant · Projets personnels · La Réunion</span>
+            <span>ESIROI · Projets techniques & entrepreneuriaux</span>
           </div>
         </div>
 
@@ -227,9 +246,9 @@
 
         <div class="about-layout">
           <div class="about-copy" data-reveal>
-            <p class="about-lead">Étudiant en première année de Cycle Préparatoire Intégré à l'ESIROI, je m'intéresse aux systèmes informatiques, aux réseaux et aux nouvelles technologies.</p>
-            <p>En parallèle des cours, je développe mes compétences avec des projets personnels : administration d'un homelab, déploiement de services, développement web et automatisation.</p>
-            <p>Je pratique notamment Linux, Proxmox, Docker, les réseaux, Python et JavaScript. Je m'intéresse également à l'électronique, aux ESP32, à la domotique et à la conception 3D.</p>
+            <p class="about-lead">J’aime comprendre comment les systèmes fonctionnent, puis transformer cette compréhension en solutions concrètes.</p>
+            <p>Mon approche est volontairement transversale : je passe du code à l’administration d’infrastructures, de l’électronique aux objets connectés, jusqu’à la conception 3D.</p>
+            <p>Cette curiosité se traduit par des réalisations que je construis, héberge et améliore moi-même, ainsi que par le développement de REVOLT ENGINE avec mon associé.</p>
             <a class="text-link" href="https://github.com/Estcool9" target="_blank" rel="noopener noreferrer">Voir mes projets sur GitHub <span aria-hidden="true">↗</span></a>
           </div>
 
@@ -362,7 +381,23 @@
         </div>
 
         <div class="projects-grid">
-          
+          <article class="project-card project-featured project-revolt" data-reveal>
+            <div class="project-art art-revolt">
+              <img class="project-logo revolt-project-logo" src="/assets/projects/revolt-engine-logo.svg" alt="Logo REVOLT ENGINE" width="900" height="360" loading="lazy" decoding="async">
+              <span class="art-label">CO-FONDATION · PROJET ENTREPRENEURIAL</span>
+              <span class="revolt-art-caption">ENGINEERING / DIGITAL / MOBILITY</span>
+            </div>
+            <div class="project-content">
+              <div class="project-topline"><span class="project-type">01 — PROJET CENTRAL</span><span class="project-state"><i></i> EN DÉVELOPPEMENT</span></div>
+              <h3>REVOLT ENGINE</h3>
+              <p class="project-revolt-lead">Construire une activité indépendante autour de la préparation, du diagnostic et de la conception technique pour trottinettes électriques haute performance.</p>
+              <p>En tant que co-fondateur, je participe à la construction du projet et de son écosystème numérique : conception et développement du site, structuration des contenus, mise en place de l’infrastructure et déploiement. Le projet associe réflexion technique, identité de marque et développement d’une présence en ligne pensée pour évoluer.</p>
+              <ul class="project-tags"><li>Entrepreneuriat</li><li>Développement web</li><li>TypeScript / Node.js</li><li>Docker & Coolify</li><li>Cloudflare</li><li>Électronique</li><li>Conception 3D</li></ul>
+              <div class="project-links">
+                <a href="https://revolt-engine.com/" target="_blank" rel="noopener noreferrer">Visiter REVOLT ENGINE <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
 
           <article class="project-card" data-reveal>
             <div class="project-art art-kanaye">
@@ -496,14 +531,17 @@
           <div class="contact-orb contact-orb-one"></div><div class="contact-orb contact-orb-two"></div>
           <div class="contact-content">
             <p class="eyebrow"><span class="eyebrow-dot"></span> ET MAINTENANT ?</p>
-            <h2>Une idée, un projet<br>ou une question<span class="hero-period"> ?</span></h2>
-            <p>Je suis toujours partant pour échanger autour des systèmes, des réseaux, de l'électronique ou d'un projet technique. Écrivez-moi.</p>
-            <a class="button button-primary button-contact" href="mailto:esteban@est1.dev?subject=Contact%20depuis%20est1.dev">esteban@est1.dev <span aria-hidden="true">↗</span></a>
+            <h2>Parlons de votre<br>prochain projet<span class="hero-period">.</span></h2>
+            <p>Pour une collaboration, une question technique ou simplement échanger, vous pouvez me contacter directement.</p>
+            <a class="button button-primary button-contact" href="mailto:esteban@est1.dev?subject=Contact%20depuis%20est1.dev">Écrire à Esteban <span aria-hidden="true">↗</span></a>
+            <a class="contact-email-large" href="mailto:esteban@est1.dev">esteban@est1.dev</a>
           </div>
           <div class="contact-aside">
             <span class="contact-aside-label">RETROUVEZ-MOI AUSSI SUR</span>
             <a href="https://github.com/Estcool9" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
             <span class="contact-location">La Réunion, France<br>Océan Indien</span>
+            <a href="https://revolt-engine.com/" target="_blank" rel="noopener noreferrer">REVOLT ENGINE ↗</a>
+            <span class="contact-location">Disponible pour projets et collaborations</span>
             <span class="contact-signature">ESTEBAN BUENO © <span id="year"></span></span>
           </div>
         </div>
